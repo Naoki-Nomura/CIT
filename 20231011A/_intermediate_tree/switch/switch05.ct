@@ -1,0 +1,22 @@
+	(DEVER	a	int)
+	(DEVER	b	int)
+	(DEFUN	main	void
+		{
+			(T(=)	a	700)
+			(T(=)	b	0)
+			(SWITCH	a
+				(CASE	100
+					(T(=)	b	1000)
+					(BREAK)
+				)
+				(CASE	200
+					(T(=)	b	2000)
+					(BREAK)
+				)
+				(CASE	300
+					(T(=)	b	3000)
+					(BREAK)
+				)
+			)
+		}
+	)

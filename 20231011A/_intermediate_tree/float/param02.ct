@@ -1,0 +1,126 @@
+	(DEVER	val01	float	100)
+	(DEVER	val02	float	200)
+	(DEVER	val03	float	300)
+	(DEVER	val04	float	400)
+	(DEVER	val05	float	500)
+	(DEVER	val06	float	600)
+	(DEVER	val07	float	700)
+	(DEVER	val08	float	800)
+	(DEVER	val09	float	900)
+	(DEVER	val10	float	1000)
+	(DEFUN	calc_add	float
+		(DEFG	v1	float)
+		(DEFG	v2	float)
+		{
+			(RETURN	(T(+)	v1	v2))
+		}
+	)
+	(DEFUN	func00	float
+		{
+			(RETURN	100.0f)
+		}
+	)
+	(DEFUN	func01	float
+		(DEFG	p1	float)
+		{
+			(RETURN	p1)
+		}
+	)
+	(DEFUN	func02	float
+		(DEFG	p1	float)
+		(DEFG	p2	float)
+		{
+			(RETURN	(T(+)	p1	p2))
+		}
+	)
+	(DEFUN	func03	float
+		(DEFG	p1	float)
+		(DEFG	p2	float)
+		(DEFG	p3	float)
+		{
+			(RETURN	(T(+)	(T(+)	p1	p2)	p3))
+		}
+	)
+	(DEFUN	func04	float
+		(DEFG	p1	float)
+		(DEFG	p2	float)
+		(DEFG	p3	float)
+		(DEFG	p4	float)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4))
+		}
+	)
+	(DEFUN	func05	float
+		(DEFG	p1	float)
+		(DEFG	p2	float)
+		(DEFG	p3	float)
+		(DEFG	p4	float)
+		(DEFG	p5	float)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5))
+		}
+	)
+	(DEFUN	func06	float
+		(DEFG	p1	float)
+		(DEFG	p2	float)
+		(DEFG	p3	float)
+		(DEFG	p4	float)
+		(DEFG	p5	float)
+		(DEFG	p6	float)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5)	p6))
+		}
+	)
+	(DEFUN	func07	float
+		(DEFG	p1	float)
+		(DEFG	p2	float)
+		(DEFG	p3	float)
+		(DEFG	p4	float)
+		(DEFG	p5	float)
+		(DEFG	p6	float)
+		(DEFG	p7	float)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5)	p6)	p7))
+		}
+	)
+	(DEFUN	func08	float
+		(DEFG	p1	float)
+		(DEFG	p2	float)
+		(DEFG	p3	float)
+		(DEFG	p4	float)
+		(DEFG	p5	float)
+		(DEFG	p6	float)
+		(DEFG	p7	float)
+		(DEFG	p8	float)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5)	p6)	p7)	p8))
+		}
+	)
+	(DEFUN	func09	float
+		(DEFG	p1	float)
+		(DEFG	p2	float)
+		(DEFG	p3	float)
+		(DEFG	p4	float)
+		(DEFG	p5	float)
+		(DEFG	p6	float)
+		(DEFG	p7	float)
+		(DEFG	p8	float)
+		(DEFG	p9	float)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5)	p6)	p7)	p8)	p9))
+		}
+	)
+	(DEFUN	func10	float
+		(DEFG	p1	float)
+		(DEFG	p2	float)
+		(DEFG	p3	float)
+		(DEFG	p4	float)
+		(DEFG	p5	float)
+		(DEFG	p6	float)
+		(DEFG	p7	float)
+		(DEFG	p8	float)
+		(DEFG	p9	float)
+		(DEFG	p10	float)
+		{
+		}
+	)

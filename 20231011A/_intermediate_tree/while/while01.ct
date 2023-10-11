@@ -1,0 +1,53 @@
+	(DEVER	a	int)
+	(DEVER	b	int)
+	(DEVER	c	int)
+	(DEVER	answer1	int)
+	(DEVER	answer2	int)
+	(DEFUN	main	void
+		{
+			(T(=)	a	0)
+			(T(=)	b	20)
+			(T(=)	c	30)
+			(WHILE	0
+				{
+				}
+			)
+			(T(=)	answer1	0)
+			(T(=)	answer2	0)
+			(WHILE	0
+				{
+					(T(=)	answer1	100)
+					(T(=)	answer2	200)
+					(BREAK)
+				}
+			)
+			(WHILE	1
+				{
+					(T(=)	a	(T(+)	a	1))
+					(IF	(T(<)	10	a)
+						{
+							(BREAK)
+						}
+					)
+				}
+			)
+			(WHILE	(T(<=)	a	10)
+				{
+					(T(=)	a	(T(+)	a	1))
+				}
+			)
+			(T(=)	a	0)
+			(T(=)	b	0)
+			(WHILE	(T(<=)	a	10)
+				{
+					(T(=)	a	(T(+)	a	1))
+					(T(=)	b	(T(+)	b	1))
+				}
+			)
+			(WHILE	(T(<=)	(T(POST++)	a)	10)
+				{
+					(T(=)	b	(T(+)	b	1))
+				}
+			)
+		}
+	)

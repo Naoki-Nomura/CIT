@@ -1,0 +1,223 @@
+	(DEVER	val00	char	0)
+	(DEVER	val01	char	1)
+	(DEVER	val02	char	2)
+	(DEVER	val03	char	3)
+	(DEVER	val04	char	4)
+	(DEVER	val05	char	5)
+	(DEVER	val06	char	6)
+	(DEVER	val07	char	7)
+	(DEVER	val08	char	8)
+	(DEVER	val09	char	9)
+	(DEVER	val10	char	10)
+	(DEFUN	func00	char
+		{
+			(RETURN	(CAST	1	char))
+		}
+	)
+	(DEFUN	func01	char
+		(DEFG	p1	char)
+		{
+			(RETURN	p1)
+		}
+	)
+	(DEFUN	func02	char
+		(DEFG	p1	char)
+		(DEFG	p2	char)
+		{
+			(RETURN	(T(+)	p1	p2))
+		}
+	)
+	(DEFUN	func03	char
+		(DEFG	p1	char)
+		(DEFG	p2	char)
+		(DEFG	p3	char)
+		{
+			(RETURN	(T(+)	(T(+)	p1	p2)	p3))
+		}
+	)
+	(DEFUN	func04	char
+		(DEFG	p1	char)
+		(DEFG	p2	char)
+		(DEFG	p3	char)
+		(DEFG	p4	char)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4))
+		}
+	)
+	(DEFUN	func05	char
+		(DEFG	p1	char)
+		(DEFG	p2	char)
+		(DEFG	p3	char)
+		(DEFG	p4	char)
+		(DEFG	p5	char)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5))
+		}
+	)
+	(DEFUN	func06	char
+		(DEFG	p1	char)
+		(DEFG	p2	char)
+		(DEFG	p3	char)
+		(DEFG	p4	char)
+		(DEFG	p5	char)
+		(DEFG	p6	char)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5)	p6))
+		}
+	)
+	(DEFUN	func07	char
+		(DEFG	p1	char)
+		(DEFG	p2	char)
+		(DEFG	p3	char)
+		(DEFG	p4	char)
+		(DEFG	p5	char)
+		(DEFG	p6	char)
+		(DEFG	p7	char)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5)	p6)	p7))
+		}
+	)
+	(DEFUN	func08	char
+		(DEFG	p1	char)
+		(DEFG	p2	char)
+		(DEFG	p3	char)
+		(DEFG	p4	char)
+		(DEFG	p5	char)
+		(DEFG	p6	char)
+		(DEFG	p7	char)
+		(DEFG	p8	char)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5)	p6)	p7)	p8))
+		}
+	)
+	(DEFUN	func09	char
+		(DEFG	p1	char)
+		(DEFG	p2	char)
+		(DEFG	p3	char)
+		(DEFG	p4	char)
+		(DEFG	p5	char)
+		(DEFG	p6	char)
+		(DEFG	p7	char)
+		(DEFG	p8	char)
+		(DEFG	p9	char)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5)	p6)	p7)	p8)	p9))
+		}
+	)
+	(DEFUN	func10	char
+		(DEFG	p1	char)
+		(DEFG	p2	char)
+		(DEFG	p3	char)
+		(DEFG	p4	char)
+		(DEFG	p5	char)
+		(DEFG	p6	char)
+		(DEFG	p7	char)
+		(DEFG	p8	char)
+		(DEFG	p9	char)
+		(DEFG	p10	char)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5)	p6)	p7)	p8)	p9)	p10))
+		}
+	)
+	(DEFUN	func11	char
+		(DEFG	p1	char)
+		(DEFG	p2	char)
+		(DEFG	p3	char)
+		(DEFG	p4	char)
+		(DEFG	p5	char)
+		(DEFG	p6	char)
+		(DEFG	p7	char)
+		(DEFG	p8	char)
+		(DEFG	p9	char)
+		(DEFG	p10	char)
+		(DEFG	p11	char)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5)	p6)	p7)	p8)	p9)	p10)	p11))
+		}
+	)
+	(DEFUN	func12	char
+		(DEFG	p1	char)
+		(DEFG	p2	char)
+		(DEFG	p3	char)
+		(DEFG	p4	char)
+		(DEFG	p5	char)
+		(DEFG	p6	char)
+		(DEFG	p7	char)
+		(DEFG	p8	char)
+		(DEFG	p9	char)
+		(DEFG	p10	char)
+		(DEFG	p11	char)
+		(DEFG	p12	char)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5)	p6)	p7)	p8)	p9)	p10)	p11)	p12))
+		}
+	)
+	(DEFUN	func13	char
+		(DEFG	p1	char)
+		(DEFG	p2	char)
+		(DEFG	p3	char)
+		(DEFG	p4	char)
+		(DEFG	p5	char)
+		(DEFG	p6	char)
+		(DEFG	p7	char)
+		(DEFG	p8	char)
+		(DEFG	p9	char)
+		(DEFG	p10	char)
+		(DEFG	p11	char)
+		(DEFG	p12	char)
+		(DEFG	p13	char)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5)	p6)	p7)	p8)	p9)	p10)	p11)	p12)	p13))
+		}
+	)
+	(DEFUN	func30	char
+		(DEFG	p01	char)
+		(DEFG	p02	char)
+		(DEFG	p03	char)
+		(DEFG	p04	char)
+		(DEFG	p05	char)
+		(DEFG	p06	char)
+		(DEFG	p07	char)
+		(DEFG	p08	char)
+		(DEFG	p09	char)
+		(DEFG	p10	char)
+		(DEFG	p11	char)
+		(DEFG	p12	char)
+		(DEFG	p13	char)
+		(DEFG	p14	char)
+		(DEFG	p15	char)
+		(DEFG	p16	char)
+		(DEFG	p17	char)
+		(DEFG	p18	char)
+		(DEFG	p19	char)
+		(DEFG	p20	char)
+		(DEFG	p21	char)
+		(DEFG	p22	char)
+		(DEFG	p23	char)
+		(DEFG	p24	char)
+		(DEFG	p25	char)
+		(DEFG	p26	char)
+		(DEFG	p27	char)
+		(DEFG	p28	char)
+		(DEFG	p29	char)
+		(DEFG	p30	char)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p01	p02)	p03)	p04)	p05)	p06)	p07)	p08)	p09)	p10)	p11)	p12)	p13)	p14)	p15)	p16)	p17)	p18)	p19)	p20)	p21)	p22)	p23)	p24)	p25)	p26)	p27)	p28)	p29)	p30))
+		}
+	)
+	(DEFUN	main	void
+		{
+			(DEVER	ans	char)
+			(T(=)	ans	(func00))
+			(T(=)	ans	(func01	1))
+			(T(=)	ans	(func02	1	2))
+			(T(=)	ans	(func03	1	2	3))
+			(T(=)	ans	(func04	1	2	3	4))
+			(T(=)	ans	(func05	1	2	3	4	5))
+			(T(=)	ans	(func06	1	2	3	4	5	6))
+			(T(=)	ans	(func07	1	2	3	4	5	6	7))
+			(T(=)	ans	(func08	1	2	3	4	5	6	7	8))
+			(T(=)	ans	(func09	1	2	3	4	5	6	7	8	9))
+			(T(=)	ans	(func10	val01	val02	val03	val04	val05	val06	val07	val08	val09	val10))
+		}
+	)

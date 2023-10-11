@@ -1,0 +1,22 @@
+	(DEFUN	func1	float
+		{
+			(DEVER	result	float)
+			(T(=)	result	(T(+)	(T(+)	100	200)	300))
+			(RETURN	result)
+		}
+	)
+	(DEFUN	func2	int
+		{
+			(DEVER	result	int)
+			(T(=)	result	(T(+)	(T(+)	100	200)	300))
+			(RETURN	result)
+		}
+	)
+	(DEFUN	main	void
+		{
+			(DEVER	a	float)
+			(DEVER	b	int)
+			(T(=)	a	(func1))
+			(T(=)	b	(func2))
+		}
+	)

@@ -1,0 +1,19 @@
+	(DEFUN	func1	void
+		{
+			(func2)
+		}
+	)
+	(DEFUN	func2	void
+		{
+			(func3)
+		}
+	)
+	(DEFUN	main	void
+		{
+			(func1)
+		}
+	)
+	(DEFUN	func3	void
+		{
+		}
+	)

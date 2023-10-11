@@ -1,0 +1,23 @@
+	(DEVER	val1	int	1)
+	(DEVER	val2	int	2)
+	(DEVER	val3	int	3)
+	(DEVER	val4	int	4)
+	(DEVER	val5	int	5)
+	(DEVER	val6	int	6)
+	(DEVER	val7	int	7)
+	(DEVER	val8	int	8)
+	(DEVER	val9	int	9)
+	(DEVER	answer1	int	0)
+	(DEFUN	main	void
+		{
+			(T(=)	answer1	0)
+			(IF	(T(||)	(T(||)	(T(||)	(T(||)	(T(||)	(T(||)	(T(||)	(T(||)	(T(!=)	val1	1)	(T(!=)	val2	2))	(T(!=)	val3	3))	(T(!=)	val4	4))	(T(!=)	val5	5))	(T(!=)	val6	6))	(T(!=)	val7	7))	(T(!=)	val8	8))	(T(!=)	val9	9))
+				{
+					(T(=)	answer1	10)
+				}
+				(ELSE	{
+					(T(=)	answer1	-10)
+				})
+			)
+		}
+	)

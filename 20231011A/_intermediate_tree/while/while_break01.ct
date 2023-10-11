@@ -1,0 +1,32 @@
+	(DEVER	a	int)
+	(DEVER	b	int)
+	(DEVER	c	int)
+	(DEFUN	main	void
+		{
+			(T(=)	a	0)
+			(T(=)	b	0)
+			(T(=)	c	0)
+			(WHILE	(T(<)	a	100)
+				{
+					(T(=)	a	(T(+)	a	1))
+					(IF	(T(<=)	80	a)
+						{
+							(BREAK)
+						}
+					)
+					(T(=)	b	(T(+)	b	1))
+					(IF	(T(<=)	8	b)
+						{
+							(BREAK)
+						}
+					)
+					(T(=)	c	(T(+)	c	1))
+					(IF	(T(<=)	5	c)
+						{
+							(BREAK)
+						}
+					)
+				}
+			)
+		}
+	)

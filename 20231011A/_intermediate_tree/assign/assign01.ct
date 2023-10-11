@@ -1,0 +1,9 @@
+	(DEFUN	main	void
+		{
+			(DEVER	a	int)
+			(DEVER	b	int)
+			(DEVER	c	int)
+			(T(=)	a	10)
+			(T(=)	a	(T(=)	b	(T(=)	c	20)))
+		}
+	)

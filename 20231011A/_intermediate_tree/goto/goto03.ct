@@ -1,0 +1,28 @@
+	(DEVER	err	int)
+	(DEFUN	main	void
+		{
+			(T(=)	err	2)
+			(IF	(T(==)	err	1)
+				{
+					(GOTO	error)
+				}
+				(ELSE	{
+					(IF	(T(==)	err	2)
+						{
+							(GOTO	error)
+						}
+						(ELSE	{
+							(IF	(T(==)	err	3)
+								{
+									(GOTO	error)
+								}
+							)
+						})
+					)
+				})
+			)
+			(RETURN)
+		(LABEL	error)
+			(RETURN)
+		}
+	)

@@ -1,0 +1,28 @@
+	(DEVER	a	int)
+	(DEVER	b	int)
+	(DEVER	c	int)
+	(DEFUN	main	void
+		{
+			(T(=)	a	0)
+			(T(=)	b	0)
+			(T(=)	c	0)
+			(DOWHILE	
+				{
+					(T(POST++)	a)
+					(IF	(T(<=)	10	a)
+						{
+							(BREAK)
+						}
+					)
+					(T(POST++)	b)
+					(IF	(T(<=)	3	b)
+						{
+							(BREAK)
+						}
+					)
+					(T(POST++)	c)
+				}
+				(T(<)	a	100)
+			)
+		}
+	)

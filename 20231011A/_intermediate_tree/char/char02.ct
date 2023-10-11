@@ -1,0 +1,14 @@
+	(DEVER	a	char)
+	(DEVER	b	char)
+	(DEVER	c	char)
+	(DEVER	d	char)
+	(DEVER	e	char)
+	(DEFUN	main	void
+		{
+			(T(=)	a	'1')
+			(T(=)	b	'2')
+			(T(=)	c	'3')
+			(T(=)	d	'4')
+			(T(=)	e	'5')
+		}
+	)

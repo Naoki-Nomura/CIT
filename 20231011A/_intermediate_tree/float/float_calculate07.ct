@@ -1,0 +1,12 @@
+	(DEFUN	main	void
+		{
+			(DEVER	ans	float	0)
+			(DEVER	a	float)
+			(DEVER	b	float)
+			(DEVER	c	float)
+			(T(=)	a	20)
+			(T(=)	b	30)
+			(T(=)	c	70)
+			(T(=)	ans	(T(-)	(T(*)	(T(*)	a	b)	c)	(T(+)	(T(/)	(T(+)	a	b)	(T(-)	(T(-)	b	a)	0.2f))	100)))
+		}
+	)

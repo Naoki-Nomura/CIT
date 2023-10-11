@@ -1,0 +1,6 @@
+	(DEVER	result	float)
+	(DEFUN	main	void
+		{
+			(T(=)	result	3)
+		}
+	)

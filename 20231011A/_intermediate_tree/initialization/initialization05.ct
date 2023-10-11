@@ -1,0 +1,21 @@
+	(STRUCT	vec3i	(x	int)	(y	int)	(z	int))
+	(STRUCT	tformvi	(pos	vec3i)	(rot	vec3i)	(scale	vec3i))
+	(DEVER	val	tformvi	{
+	{100	200	300}	
+	{400	-500	600}	
+	{700	800	900}
+})
+	(DEVER	answer	int)
+	(DEFUN	main	void
+		{
+			(T(=)	answer	val.pos.x)
+			(T(=)	answer	val.pos.y)
+			(T(=)	answer	val.pos.z)
+			(T(=)	answer	val.rot.x)
+			(T(=)	answer	val.rot.y)
+			(T(=)	answer	val.rot.z)
+			(T(=)	answer	val.scale.x)
+			(T(=)	answer	val.scale.y)
+			(T(=)	answer	val.scale.z)
+		}
+	)

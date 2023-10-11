@@ -1,0 +1,51 @@
+	(DEFUN	func1	int
+		(DEFG	p1	int)
+		{
+			(DEVER	val1	int	10)
+			(DEVER	val2	int	20)
+			(DEVER	val3	int	30)
+			(DEVER	val4	int	40)
+			(T(=)	val2	p1)
+			(T(=)	val1	(func2	1	2	3	4	5	6	7	8	9	10	11	12))
+			(RETURN	100)
+		}
+	)
+	(DEFUN	func2	int
+		(DEFG	p1	int)
+		(DEFG	p2	int)
+		(DEFG	p3	int)
+		(DEFG	p4	int)
+		(DEFG	p5	int)
+		(DEFG	p6	int)
+		(DEFG	p7	int)
+		(DEFG	p8	int)
+		(DEFG	p9	int)
+		(DEFG	p10	int)
+		(DEFG	p11	int)
+		(DEFG	p12	int)
+		{
+			(DEVER	val1	int	10)
+			(DEVER	val2	int	20)
+			(DEVER	val3	int	30)
+			(DEVER	val4	int	40)
+			(DEVER	val5	int	50)
+			(DEVER	val6	int	60)
+			(DEVER	val7	int	70)
+			(DEVER	val8	int	80)
+			(T(=)	val1	p1)
+			(T(=)	val2	p2)
+			(T(=)	val3	p3)
+			(T(=)	val4	p4)
+			(T(=)	val5	p9)
+			(T(=)	val6	p10)
+			(T(=)	val7	p11)
+			(T(=)	val8	p12)
+			(RETURN	200)
+		}
+	)
+	(DEFUN	main	void
+		{
+			(DEVER	val1	int	10)
+			(T(=)	val1	(func1	1))
+		}
+	)

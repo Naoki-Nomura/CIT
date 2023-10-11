@@ -1,0 +1,20 @@
+	(STRUCT	vec3	(x	int)	(y	int)	(z	int))
+	(DEVER	val	[3]vec3	{
+	{100	200	300}	
+	{400	-500	600}	
+	{700	800	900}
+})
+	(DEVER	answer	int)
+	(DEFUN	main	void
+		{
+			(T(=)	answer	val[0].x)
+			(T(=)	answer	val[0].y)
+			(T(=)	answer	val[0].z)
+			(T(=)	answer	val[1].x)
+			(T(=)	answer	val[1].y)
+			(T(=)	answer	val[1].z)
+			(T(=)	answer	val[2].x)
+			(T(=)	answer	val[2].y)
+			(T(=)	answer	val[2].z)
+		}
+	)

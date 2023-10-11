@@ -1,0 +1,19 @@
+	(DEVER	a	[3]int	{100	-200	300})
+	(DEVER	b	[3]int	{400	-500	600})
+	(DEVER	c	[5]int	{700	800	-900	1000	1100})
+	(DEVER	answer	int)
+	(DEFUN	main	void
+		{
+			(T(=)	answer	a[0])
+			(T(=)	answer	a[1])
+			(T(=)	answer	a[2])
+			(T(=)	answer	b[0])
+			(T(=)	answer	b[1])
+			(T(=)	answer	b[2])
+			(T(=)	answer	c[0])
+			(T(=)	answer	c[1])
+			(T(=)	answer	c[2])
+			(T(=)	answer	c[3])
+			(T(=)	answer	c[4])
+		}
+	)

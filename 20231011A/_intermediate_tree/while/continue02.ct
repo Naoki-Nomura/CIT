@@ -1,0 +1,27 @@
+	(DEVER	ary	[10]int)
+	(DEVER	i	int)
+	(DEFUN	main	void
+		{
+			(T(=)	ary[0]	1)
+			(T(=)	ary[1]	2)
+			(T(=)	ary[2]	3)
+			(T(=)	ary[3]	4)
+			(T(=)	ary[4]	5)
+			(T(=)	ary[5]	6)
+			(T(=)	ary[6]	7)
+			(T(=)	ary[7]	8)
+			(T(=)	ary[8]	9)
+			(T(=)	ary[9]	10)
+			(T(=)	i	-1)
+			(WHILE	(T(<)	i	9)
+				{
+					(T(POST++)	i)
+					(IF	(T(==)	(T(%)	ary[i]	2)	0)
+						{
+							(CONTINUE)
+						}
+					)
+				}
+			)
+		}
+	)

@@ -1,0 +1,9 @@
+	(STRUCT	vector	(x	int)	(y	int)	(z	int))
+	(DEFUN	main	void
+		{
+			(DEVER	test	vector)
+			(T(=)	test.x	100)
+			(T(=)	test.y	200)
+			(T(=)	test.z	300)
+		}
+	)

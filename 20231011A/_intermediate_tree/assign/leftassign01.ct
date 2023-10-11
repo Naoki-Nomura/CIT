@@ -1,0 +1,22 @@
+	(DEFUN	main	void
+		{
+			(DEVER	a	int)
+			(DEVER	b	int)
+			(DEVER	c	int)
+			(DEVER	ap	*int)
+			(DEVER	bp	*int)
+			(T(=)	a	2)
+			(T(=)	b	6)
+			(T(=)	ap	a&)
+			(T(=)	bp	b&)
+			(T(=)	a	(T(<<)	a	2))
+			(T(=)	a	2)
+			(T(=)	a	(T(<<)	a	b))
+			(T(=)	a	2)
+			(T(=)	ap*	(T(<<)	ap*	bp*))
+			(T(=)	a	2)
+			(T(=)	b	5)
+			(T(=)	c	1)
+			(T(=)	ap*	(T(<<)	ap*	(T(+)	bp*	c)))
+		}
+	)

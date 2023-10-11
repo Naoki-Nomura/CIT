@@ -1,0 +1,22 @@
+	(DEVER	answer1	int)
+	(DEVER	answer2	int)
+	(DEFUN	main	int
+		{
+			(DEVER	i	int)
+			(T(=)	answer1	0)
+			(T(=)	answer2	0)
+			(FOR	(T(=)	i	1)	(T(<=)	i	100)	(T(POST++)	i)
+				{
+					(T(=)	answer1	(T(+)	answer1	i))
+					(IF	(T(<=)	10	i)
+						{
+							(BREAK)
+						}
+					)
+					(T(=)	answer2	(T(+)	answer2	i))
+				}
+			)
+			(CIDebug.vint	"answer1 >>>"	answer1	55)
+			(CIDebug.vint	"answer2 >>>"	answer2	45)
+		}
+	)

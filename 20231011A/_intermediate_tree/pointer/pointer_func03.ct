@@ -1,0 +1,27 @@
+	(DEVER	val	int	100)
+	(DEVER	pfaray	[3]*()int)
+	(DEFUN	main	void
+		{
+			(T(=)	pfaray[0]	func1)
+			(T(=)	pfaray[1]	func2)
+			(T(=)	pfaray[2]	func3)
+			(T(=)	val	(pfaray[0]*))
+			(T(=)	val	(pfaray[1]*))
+			(T(=)	val	(pfaray[2]*))
+		}
+	)
+	(DEFUN	func1	int
+		{
+			(RETURN	200)
+		}
+	)
+	(DEFUN	func2	int
+		{
+			(RETURN	300)
+		}
+	)
+	(DEFUN	func3	int
+		{
+			(RETURN	400)
+		}
+	)

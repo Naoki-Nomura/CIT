@@ -1,0 +1,7 @@
+	(DEVER	isrc	int	3)
+	(DEVER	result	float)
+	(DEFUN	main	void
+		{
+			(T(=)	result	isrc)
+		}
+	)

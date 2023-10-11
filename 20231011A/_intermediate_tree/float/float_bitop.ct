@@ -1,0 +1,8 @@
+	(DEVER	val01	float	1.2f)
+	(DEVER	val02	float	3.5f)
+	(DEFUN	main	void
+		{
+			(DEVER	answer	float)
+			(T(=)	answer	(T(+)	val01	val02))
+		}
+	)

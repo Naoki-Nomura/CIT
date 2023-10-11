@@ -1,0 +1,62 @@
+	(DEVER	answer1	int)
+	(DEVER	i	int)
+	(DEVER	loopmax	int	30)
+	(DEVER	continue_val	int	10)
+	(DEVER	break_val	int	7)
+	(DEFUN	main	void
+		{
+			(T(=)	i	0)
+			(T(=)	answer1	0)
+			(WHILE	(T(<=)	i	loopmax)
+				{
+					(T(POST++)	i)
+					(IF	(T(<)	continue_val	answer1)
+						{
+							(CONTINUE)
+						}
+					)
+					(T(=)	answer1	(T(+)	answer1	1))
+					(IF	(T(<)	break_val	i)
+						{
+							(BREAK)
+						}
+					)
+				}
+			)
+			(T(=)	i	0)
+			(T(=)	answer1	0)
+			(DOWHILE	
+				{
+					(T(POST++)	i)
+					(IF	(T(<)	continue_val	answer1)
+						{
+							(CONTINUE)
+						}
+					)
+					(T(=)	answer1	(T(+)	answer1	1))
+					(IF	(T(<)	break_val	i)
+						{
+							(BREAK)
+						}
+					)
+				}
+				(T(<=)	i	loopmax)
+			)
+			(T(=)	answer1	0)
+			(FOR	(T(=)	i	0)	(T(<=)	i	loopmax)	(T(POST++)	i)
+				{
+					(IF	(T(<)	continue_val	answer1)
+						{
+							(CONTINUE)
+						}
+					)
+					(T(=)	answer1	(T(+)	answer1	1))
+					(IF	(T(<)	break_val	i)
+						{
+							(BREAK)
+						}
+					)
+				}
+			)
+		}
+	)

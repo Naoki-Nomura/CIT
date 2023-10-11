@@ -1,0 +1,30 @@
+	(DEVER	answer1	int)
+	(DEVER	answer2	int)
+	(DEFUN	main	void
+		{
+			(DEVER	i	int)
+			(DEVER	j	int)
+			(DEVER	k	int)
+			(T(=)	answer1	0)
+			(FOR	(T(=)	i	0)	(T(<)	i	10)	(T(POST++)	i)
+				{
+					(FOR	(T(=)	j	0)	(T(<)	j	10)	(T(POST++)	j)
+						{
+							(FOR	(T(=)	k	0)	(T(<)	k	10)	(T(POST++)	k)
+								{
+									(T(POST++)	answer1)
+									(IF	(T(<)	50	answer1)
+										{
+											(GOTO	exit)
+										}
+									)
+								}
+							)
+						}
+					)
+				}
+			)
+		(LABEL	exit)
+			(T(=)	answer2	answer1)
+		}
+	)

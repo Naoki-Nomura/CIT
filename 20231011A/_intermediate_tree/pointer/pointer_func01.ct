@@ -1,0 +1,23 @@
+	(DEVER	val	int	100)
+	(DEVER	pfunc	*()void)
+	(DEFUN	main	void
+		{
+			(T(=)	pfunc	func3)
+			(pfunc*)
+		}
+	)
+	(DEFUN	func1	void
+		{
+			(T(=)	val	200)
+		}
+	)
+	(DEFUN	func2	void
+		{
+			(T(=)	val	300)
+		}
+	)
+	(DEFUN	func3	void
+		{
+			(T(=)	val	400)
+		}
+	)

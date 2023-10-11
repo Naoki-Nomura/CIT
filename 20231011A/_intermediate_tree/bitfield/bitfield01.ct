@@ -1,0 +1,14 @@
+	(STRUCT	BF	(a	int:10)	(b	int:8)	(c	int:12)	(d	int:2))
+	(UNION	test	(f	BF)	(u	int))
+	(DEVER	val	test)
+	(DEVER	ival	int)
+	(DEFUN	main	void
+		{
+			(T(=)	val.u	0xffffffff)
+			(T(=)	ival	(T(+)	(T(+)	val.f.a	val.f.b)	val.f.c))
+			(T(=)	val.f.a	0x02)
+			(T(=)	val.f.b	0x5)
+			(T(=)	val.f.c	0x3)
+			(T(=)	val.f.d	0x1)
+		}
+	)

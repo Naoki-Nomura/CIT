@@ -1,0 +1,30 @@
+	(DEVER	a1	int)
+	(DEVER	a2	int)
+	(DEVER	a3	int)
+	(DEFUN	main	void
+		{
+			(T(=)	a1	0)
+			(T(=)	a2	0)
+			(T(=)	a3	0)
+			(WHILE	(T(<)	a3	100)
+				{
+					(T(POST++)	a1)
+					(IF	(T(<=)	a1	10)
+						{
+							(CONTINUE)
+						}
+					)
+					(T(POST++)	a2)
+					(IF	(T(<=)	a2	20)
+						{
+							(CONTINUE)
+						}
+					)
+					(T(POST++)	a3)
+				}
+			)
+			(CIDebug.vint	"a1 >>>"	a1	130)
+			(CIDebug.vint	"a2 >>>"	a2	120)
+			(CIDebug.vint	"a3 >>>"	a3	100)
+		}
+	)

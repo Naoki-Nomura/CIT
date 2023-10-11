@@ -1,0 +1,137 @@
+	(DEVER	val00	double	1234.56789)
+	(DEVER	val01	double	100)
+	(DEVER	val02	double	200)
+	(DEVER	val03	double	300)
+	(DEVER	val04	double	400)
+	(DEVER	val05	double	500)
+	(DEVER	val06	double	600)
+	(DEVER	val07	double	700)
+	(DEVER	val08	double	800)
+	(DEVER	val09	double	900)
+	(DEVER	val10	double	1000)
+	(DEFUN	func00	double
+		{
+			(RETURN	100.0)
+		}
+	)
+	(DEFUN	func01	double
+		(DEFG	p1	double)
+		{
+			(RETURN	p1)
+		}
+	)
+	(DEFUN	func02	double
+		(DEFG	p1	double)
+		(DEFG	p2	double)
+		{
+			(RETURN	(T(+)	p1	p2))
+		}
+	)
+	(DEFUN	func03	double
+		(DEFG	p1	double)
+		(DEFG	p2	double)
+		(DEFG	p3	double)
+		{
+			(RETURN	(T(+)	(T(+)	p1	p2)	p3))
+		}
+	)
+	(DEFUN	func04	double
+		(DEFG	p1	double)
+		(DEFG	p2	double)
+		(DEFG	p3	double)
+		(DEFG	p4	double)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4))
+		}
+	)
+	(DEFUN	func05	double
+		(DEFG	p1	double)
+		(DEFG	p2	double)
+		(DEFG	p3	double)
+		(DEFG	p4	double)
+		(DEFG	p5	double)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5))
+		}
+	)
+	(DEFUN	func06	double
+		(DEFG	p1	double)
+		(DEFG	p2	double)
+		(DEFG	p3	double)
+		(DEFG	p4	double)
+		(DEFG	p5	double)
+		(DEFG	p6	double)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5)	p6))
+		}
+	)
+	(DEFUN	func07	double
+		(DEFG	p1	double)
+		(DEFG	p2	double)
+		(DEFG	p3	double)
+		(DEFG	p4	double)
+		(DEFG	p5	double)
+		(DEFG	p6	double)
+		(DEFG	p7	double)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5)	p6)	p7))
+		}
+	)
+	(DEFUN	func08	double
+		(DEFG	p1	double)
+		(DEFG	p2	double)
+		(DEFG	p3	double)
+		(DEFG	p4	double)
+		(DEFG	p5	double)
+		(DEFG	p6	double)
+		(DEFG	p7	double)
+		(DEFG	p8	double)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5)	p6)	p7)	p8))
+		}
+	)
+	(DEFUN	func09	double
+		(DEFG	p1	double)
+		(DEFG	p2	double)
+		(DEFG	p3	double)
+		(DEFG	p4	double)
+		(DEFG	p5	double)
+		(DEFG	p6	double)
+		(DEFG	p7	double)
+		(DEFG	p8	double)
+		(DEFG	p9	double)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5)	p6)	p7)	p8)	p9))
+		}
+	)
+	(DEFUN	func10	double
+		(DEFG	p1	double)
+		(DEFG	p2	double)
+		(DEFG	p3	double)
+		(DEFG	p4	double)
+		(DEFG	p5	double)
+		(DEFG	p6	double)
+		(DEFG	p7	double)
+		(DEFG	p8	double)
+		(DEFG	p9	double)
+		(DEFG	p10	double)
+		{
+			(RETURN	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	(T(+)	p1	p2)	p3)	p4)	p5)	p6)	p7)	p8)	p9)	p10))
+		}
+	)
+	(DEFUN	main	void
+		{
+			(DEVER	ans	double)
+			(T(=)	ans	(func00))
+			(T(=)	ans	(func01	100.0))
+			(T(=)	ans	(func02	100.0	200.0))
+			(T(=)	ans	(func03	100.0	200.0	300.0))
+			(T(=)	ans	(func04	100.0	200.0	300.0	400.0))
+			(T(=)	ans	(func05	100.0	200.0	300.0	400.0	500.0))
+			(T(=)	ans	(func06	100.0	200.0	300.0	400.0	500.0	600.0))
+			(T(=)	ans	(func07	100.0	200.0	300.0	400.0	500.0	600.0	700.0))
+			(T(=)	ans	(func08	100.0	200.0	300.0	400.0	500.0	600.0	700.0	800.0))
+			(T(=)	ans	(func09	100.0	200.0	300.0	400.0	500.0	600.0	700.0	800.0	900.0))
+			(T(=)	ans	(func10	100.0	200.0	300.0	400.0	500.0	600.0	700.0	800.0	900.0	1000.0))
+		}
+	)

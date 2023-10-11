@@ -1,0 +1,21 @@
+	(STRUCT	vec3	(x	int)	(y	int)	(z	int))
+	(STRUCT	vec5	(v	int)	(w	int)	(x	int)	(y	int)	(z	int))
+	(DEVER	answer	int)
+	(DEFUN	main	void
+		{
+			(DEVER	a	vec3	{100	-200	300})
+			(DEVER	b	vec3	{400	-500	600})
+			(DEVER	c	vec5	{700	800	-900	1000	1100})
+			(T(=)	answer	a.x)
+			(T(=)	answer	a.y)
+			(T(=)	answer	a.z)
+			(T(=)	answer	b.x)
+			(T(=)	answer	b.y)
+			(T(=)	answer	b.z)
+			(T(=)	answer	c.v)
+			(T(=)	answer	c.w)
+			(T(=)	answer	c.x)
+			(T(=)	answer	c.y)
+			(T(=)	answer	c.z)
+		}
+	)

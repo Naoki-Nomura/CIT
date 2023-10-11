@@ -1,0 +1,30 @@
+	(DEVER	answer1	int)
+	(DEVER	answer2	int)
+	(DEFUN	main	void
+		{
+			(T(=)	answer1	0)
+			(T(=)	answer2	5)
+			(IF	(T(==)	answer1	0)
+				{
+					(T(=)	answer1	1)
+				}
+			)
+			(T(=)	answer1	2)
+			(IF	(T(==)	answer1	0)
+				{
+					(T(=)	answer1	1)
+				}
+				(ELSE	{
+					(T(=)	answer1	3)
+					(IF	(T(==)	answer2	0)
+						{
+							(T(=)	answer2	1)
+						}
+						(ELSE	{
+							(T(=)	answer2	10)
+						})
+					)
+				})
+			)
+		}
+	)

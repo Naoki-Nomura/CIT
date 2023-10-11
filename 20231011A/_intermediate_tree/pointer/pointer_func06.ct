@@ -1,0 +1,37 @@
+	(DEVER	val	int	100)
+	(DEVER	pfaray	[3]*()int	{
+	func1	
+	func2	
+	func3
+})
+	(DEVER	pf	*()int	func4)
+	(DEFUN	main	void
+		{
+			(T(=)	val	(pfaray[0]*	5	6))
+			(T(=)	val	(pfaray[1]*))
+			(T(=)	val	(pfaray[2]*))
+			(T(=)	val	(pf*))
+		}
+	)
+	(DEFUN	func1	int
+		(DEFG	p1	int)
+		(DEFG	p2	int)
+		{
+			(RETURN	(T(+)	p1	p2))
+		}
+	)
+	(DEFUN	func2	int
+		{
+			(RETURN	300)
+		}
+	)
+	(DEFUN	func3	int
+		{
+			(RETURN	400)
+		}
+	)
+	(DEFUN	func4	int
+		{
+			(RETURN	500)
+		}
+	)

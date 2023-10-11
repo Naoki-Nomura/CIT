@@ -1,0 +1,27 @@
+	(DEVER	p1	int	10)
+	(DEVER	p2	int	20)
+	(DEFUN	main	void
+		{
+			(DEVER	ans	int)
+			(T(=)	ans	0)
+			(IF	(T(<)	p1	p2)
+				{
+					(T(=)	ans	p1)
+				}
+				(ELSE	{
+					(T(=)	ans	p2)
+				})
+			)
+			(T(=)	ans	0)
+			(IF	(T(<)	p1	p2)
+				{
+					(T(=)	ans	p1)
+				}
+				(ELSE	{
+					(T(=)	ans	p2)
+				})
+			)
+			(T(=)	ans	0)
+			(T(=)	ans	(T(?)	(T(<)	p1	p2)	p1	p2))
+		}
+	)
