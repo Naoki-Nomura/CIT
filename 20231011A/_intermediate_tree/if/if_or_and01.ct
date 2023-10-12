@@ -19,6 +19,5 @@
 					(T(=)	answer1	-10)
 				})
 			)
-			(CIDebug.vint	"answer1 >>>"	answer1	10)
 		}
 	)
