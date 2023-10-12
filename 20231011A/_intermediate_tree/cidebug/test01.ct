@@ -1,6 +1,0 @@
-	(DEVER	answer	int	10)
-	(DEFUN	main	void
-		{
-			(CIDebug.vint	"answer="	answer	10)
-		}
-	)
