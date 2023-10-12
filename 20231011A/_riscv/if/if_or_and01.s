@@ -72,8 +72,7 @@ answer1:
 	.type	main, @function
 main:
 	addi	sp,sp,-16
-	sd	ra,8(sp)
-	sd	s0,0(sp)
+	sd	s0,8(sp)
 	addi	s0,sp,16
 	#
 	# === ccfAssign ========================================
@@ -315,16 +314,8 @@ main:
 	lla	a4,answer1
 	sw	a5,0(a4)
 .if1_EXIT:
-	#
-	# === call ========================================
-	#(CIDebug.vint	"answer1 >>>"	answer1	10)
-	li	a2,10
-	lla	a1,answer1
-	lw	a1,0(a1)
-	call	CIDebug.vint
 	nop
-	ld	ra,8(sp)
-	ld	s0,0(sp)
+	ld	s0,8(sp)
 	addi	sp,sp,16
 	jr	ra
 	.size	main, .-main
