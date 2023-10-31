@@ -50,7 +50,7 @@ main:
 	fsub.s	ft1,ft3,ft1
 	fdiv.s	ft1,ft2,ft1
 	li	a5,100
-	fmv.w.x	ft2,a5
+	fcvt.s.w	ft2,a5
 	fadd.s	ft2,ft1,ft2
 	fsub.s	ft2,ft0,ft2
 	fsw	ft2,-20(s0)
