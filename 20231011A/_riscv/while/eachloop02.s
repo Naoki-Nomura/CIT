@@ -98,7 +98,7 @@ main:
 	blt	a5,a4,.if2_TRUE
 	j	.if2_EXIT
 .if2_TRUE:
-	j	.while1
+	j	.while1_COND
 .if2_EXIT:
 	#
 	# === ccfAssign ========================================
@@ -190,7 +190,7 @@ main:
 	blt	a5,a4,.if5_TRUE
 	j	.if5_EXIT
 .if5_TRUE:
-	j	.dowhile4
+	j	.dowhile4_COND
 .if5_EXIT:
 	#
 	# === ccfAssign ========================================
